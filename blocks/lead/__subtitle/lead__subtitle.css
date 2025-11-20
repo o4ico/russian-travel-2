@@ -1,0 +1,29 @@
+.lead__subtitle {
+
+  /*Типографика*/
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 36px;
+  text-align: center;
+  text-wrap: pretty;
+
+  /*Размеры блока и отступы*/
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 0 56px;
+}
+
+@media (max-width: 750px) {
+
+  .lead__subtitle {
+
+    /*Адаптивность*/
+    font-size: clamp(16px, 3.8vw, 30px); /*Плавное изменение размера шрифта*/
+    line-height: clamp(20px, 4.5vw, 36px);
+
+    /*Размеры блока и отступы*/
+    padding: 0 0 40px;
+    max-width: min(30ch, 100%) /*Ограничение ширины для переноса как в макете*/
+  }
+
+}

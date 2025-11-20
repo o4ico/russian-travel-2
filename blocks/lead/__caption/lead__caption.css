@@ -1,0 +1,24 @@
+.lead__caption {
+
+  /*Выравнивание*/
+  align-self: flex-start;
+
+  /*Типографика*/
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  /*Размеры блока и отступы*/
+  margin: 0;
+  padding: 8px 0 0;
+}
+
+@media (max-width: 750px) {
+
+  .lead__caption {
+    margin: 0 0 0 24px;
+  }
+
+}

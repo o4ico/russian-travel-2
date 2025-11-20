@@ -1,0 +1,38 @@
+.lead__title {
+
+  /*Типографика*/
+  font-size: 96px;
+  font-weight: 900;
+  line-height: 100px;
+  text-align: center;
+  text-wrap: balance;
+
+  /*Размеры блока и отступы*/
+  margin: 0 auto;
+  max-width: 720px;
+  padding: 0 0 32px;
+}
+
+@media (max-width: 768px) {
+
+  .lead__title {
+
+    /* Адаптивность */
+    font-size: clamp(40px, 12vw, 96px); /*Плавное изменение размера шрифта*/
+    line-height: clamp(44px, 12.5vw, 100px);
+
+    /*Размеры блока и отступы*/
+    padding: 0 0 16px;
+    margin: 0 24px;
+  }
+
+}
+
+@media (max-width: 350px) {
+
+  .lead__title {
+    /*Размеры блока и отступы*/
+    margin: 0 16px;
+  }
+  
+}
