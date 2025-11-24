@@ -1,0 +1,35 @@
+.intro__title {
+
+  /*Типографика*/
+  font-size: 54px;
+  font-weight: 900;
+  line-height: 58px;
+  text-wrap: balance;
+
+  /*Размеры блока и отступы*/
+  margin: 0;
+  max-width: 720px;
+  padding: 0 0 40px;
+}
+
+@media (max-width: 768px) {
+
+  .intro__title {
+
+    /* Адаптивность */
+    font-size: clamp(32px, 8vw, 54px); /*Плавное изменение размера шрифта*/
+    line-height: clamp(35px, 8.5vw, 58px);
+  }
+
+}
+
+@media (max-width: 350px) {
+
+  .intro__title {
+
+  /*Типографика*/
+  font-size: 32px;
+  line-height: 35px;
+  }
+  
+}

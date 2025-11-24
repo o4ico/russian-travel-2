@@ -1,0 +1,23 @@
+.intro__text {
+  
+  /*Типографика*/
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 163%;
+  text-wrap: pretty;
+
+  /*Размеры блока и отступы*/
+  margin: 0;
+  max-width: 690px;
+  padding: 0 0 33px;
+}
+
+@media (max-width: 768px) {
+
+  .intro__text {
+
+    /*Размеры блока и отступы*/
+    max-width: 720px;
+  }
+
+}

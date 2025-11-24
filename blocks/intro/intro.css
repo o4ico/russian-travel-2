@@ -1,19 +1,19 @@
-.lead {
+.intro {
 
-  /*Центрированный вертикальный контейнер*/
+  /*Вертикальный контейнер*/
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 
   /*Размеры блока и отступы*/
   width: calc(100% - 96px); /*2 боковых отступа по 48px*/
-  padding: 0 0 92px;
   margin: 0 auto;
+  padding: 0 0 92px;
 }
 
 @media (min-width: 1100px) {
 
-  .lead {
+  .intro {
     width: calc(100% - 296px);/*Увеличенный отступ для широких экранов*/
   }
 
@@ -21,8 +21,8 @@
 
 @media (max-width: 768px) {
 
-  .lead {
-    width: 100%; /*Полная ширина на мобильных*/
+  .intro {
+    width: calc(100% - 48px); /*2 боковых отступа по 24px*/
     padding: 0 0 88px;
   }
 
@@ -30,7 +30,8 @@
 
 @media (max-width: 350px) {
 
-  .lead {
+  .intro {
+    width: calc(100% - 32px); /*2 боковых отступа по 16px*/
     padding: 0 0 64px;
   }
 
