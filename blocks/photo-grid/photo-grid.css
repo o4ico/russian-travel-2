@@ -1,0 +1,39 @@
+.photo-grid {
+
+  /*Сетка*/
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(284px, 1fr));
+
+  /*Размеры блока и отступы*/
+  gap: 16px;
+  margin: 0 auto;
+  padding: 0 0 92px;
+  width: calc(100% - 96px); /*2 боковых отступа по 48px*/
+}
+
+@media (max-width: 768px) {
+
+  .photo-grid {
+
+    /*Размеры блока и отступы*/
+    padding: 0 0 88px;
+    width: calc(100% - 48px); /*2 боковых отступа по 24px*/
+  }
+
+}
+
+@media (max-width: 350px) {
+
+  .photo-grid {
+
+    /*Сетка*/
+    grid-template-columns: minmax(284px, 1fr);/*1 колонка для мобильных*/
+
+    /*Размеры блока и отступы*/
+    gap: 12px;
+    padding: 0 0 64px;
+    width: calc(100% - 32px); /*2 боковых отступа по 16px*/
+  }
+
+}
