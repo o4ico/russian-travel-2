@@ -1,0 +1,44 @@
+.place {
+
+  /*Grid-контейнер*/
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(auto, 1fr));
+  grid-template-rows: repeat(2, minmax(min-content, max-content));
+  
+  /*Размеры блока и отступы*/
+  column-gap: 28px;
+  row-gap: 48px;
+  width: 100%;
+}
+
+
+@media (min-width: 1100px) {
+
+  .place {
+    /*Размеры блока и отступы*/
+    column-gap: 28px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .place {
+    /*Размеры блока и отступы*/
+    column-gap: 28px;
+    row-gap: 32px;
+  }
+
+}
+
+@media (max-width: 630px) {
+
+  .place {
+
+    /*Grid-контейнер в 1 колонку для мобильных*/
+    grid-template-columns: minmax(auto, 1fr);
+    grid-template-rows: repeat(5, minmax(min-content, max-content));
+  }
+
+}

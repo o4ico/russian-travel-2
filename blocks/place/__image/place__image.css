@@ -1,0 +1,9 @@
+.place__image {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  /*Положение в грид-контейнере*/
+  grid-row: 2/3;
+  grid-column: 1/2;
+}

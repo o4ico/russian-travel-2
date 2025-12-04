@@ -1,0 +1,13 @@
+.place__website {
+  align-self: end;
+}
+
+@media (max-width: 350px) {
+
+  .place__website {
+
+    /*Размеры блока и отступы*/
+    margin: 0 16px;
+  }
+
+}

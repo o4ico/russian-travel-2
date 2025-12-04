@@ -1,0 +1,11 @@
+.place__link {
+  
+  /*Типографика*/
+  color: #FFF;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 22px;
+  margin: 0;
+  text-decoration-line: underline;
+  text-underline-offset: 5px;
+}

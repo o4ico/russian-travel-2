@@ -1,0 +1,20 @@
+.place__text {
+
+  /*Вертикальный flex-контейнер*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /*Размеры блока и отступы*/
+  gap: 27px;
+}
+
+@media (max-width: 350px) {
+
+  .place__text {
+
+    /*Размеры блока и отступы*/
+    margin: 0 16px;
+  }
+
+}
