@@ -1,0 +1,19 @@
+.footer__nav {
+
+  /*Flex-контейнер*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /*Размеры блока и отступы*/
+  gap: 18px;
+}
+
+@media (max-width: 690px) {
+
+  .footer__nav {
+    flex-direction: column;
+    padding: 0 0 48px;
+  }
+
+}

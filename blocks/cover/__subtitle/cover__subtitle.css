@@ -1,0 +1,38 @@
+.cover__subtitle {
+  /*Типографика*/
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 22px;
+  text-align: center;
+  text-wrap: balance;
+
+  /*Размеры блока и отступы*/
+  margin: 0 auto;
+  max-width: 360px;
+}
+
+@media (max-width: 750px) {
+
+  .cover__subtitle {
+
+    /* Адаптивность */
+    font-size: clamp(14px, 4vw, 18px); /*Плавное изменение размера шрифта*/
+    line-height: clamp(16px, 4.5vw, 22px);
+
+    /*Размеры блока и отступы*/
+    margin: 0 24px;
+  }
+
+}
+
+@media (max-width: 350px) {
+
+  .cover__subtitle {
+
+    font-size: 14px;
+    line-height: 16px;
+    /*Размеры блока и отступы*/
+    margin: 0 16px;
+  }
+  
+}

@@ -1,0 +1,40 @@
+.footer {
+
+  /*Flex-контейнер*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /*Размеры блока и отступы*/
+  width: calc(100% - 96px); /*2 боковых отступа по 48px*/
+  padding: 92px 0 24px;
+  margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+
+  .footer {
+    width: calc(100% - 48px); /*2 боковых отступа по 24px*/
+    padding: 88px 0 24px;
+  }
+
+}
+
+
+@media (max-width: 690px) {
+
+  .footer {
+    flex-direction: column;
+    padding: 64px 0 24px;
+  }
+
+}
+
+@media (max-width: 350px) {
+
+  .footer {
+    width: calc(100% - 32px); /*2 боковых отступа по 16px*/
+  }
+
+}
